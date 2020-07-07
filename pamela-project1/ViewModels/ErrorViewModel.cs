@@ -1,6 +1,6 @@
 using System;
 
-namespace pamela_project1.Models
+namespace pamela_project1.WebUI.ViewModels
 {
     public class ErrorViewModel
     {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using pamela_project1.Models;
+using pamela_project1.WebUI.ViewModels;
 
-namespace pamela_project1.Controllers
+namespace pamela_project1.WebUI.Controllers
 {
     public class HomeController : Controller
     {

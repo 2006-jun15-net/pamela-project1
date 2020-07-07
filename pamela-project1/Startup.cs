@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using pamela_project1.DataAccess.Model;
 
-namespace pamela_project1
-{
+namespace pamela_project1.WebUI
+{ 
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -23,6 +25,8 @@ namespace pamela_project1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<pamela_project1DbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("pamela_project1DbContext")));
             services.AddControllersWithViews();
         }
 

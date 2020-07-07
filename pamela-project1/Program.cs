@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using pamela_project1.DataAccess.Model;
 
-namespace pamela_project1
+namespace pamela_project1.WebUI 
 {
     public class Program
     {
